@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: #9995d3;
+}
+.gameApp{
+  display: flex;
+  margin: 5rem auto;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 20px 30px;
+  background-color:rgba(61, 63, 61, 0.2);
+  width: 80%;
+  max-width: 800px;
+  height: 70vh;
+  border-radius: 10px;
+  box-shadow: 0 0 5px white;
+}
+.game-header h1{
+  color: #d8d4d4;
+  text-shadow: 2px 0 4px black;
+  margin: 20px 30px;
+}
+.game-header p{
+  font-size: 25px;
+  color: lawngreen;
+  text-shadow: 0 0 8px rgb(5, 5, 88);
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+aside{
+  display: flex;
+  flex-direction: column;
+  margin:10rem auto;
+  align-items: center;
+}
+.game-pannel .game-status{
+    font-size: 20px;
+    padding: 15px;
+    background:none;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgb(100, 115, 100);
+    border: 1px solid rgb(81, 81, 82);
+    color: #3f023c;
+    text-shadow: 2px 1px 3px khaki;
+    font-weight: 700;
+    width: 250px;
+    text-align: center;
+    margin-top: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.game-status.winner{
+    background: rgb(4, 181, 4);
+    color: #4b0b40;
+    transform: scale(1.04);
+    transition:  transform 0.7s ease;
+    box-shadow: 0 0  3px white;
+    border: none;
+
+}
+.game-status.draw{
+    background-color: rgb(101, 6, 6);
+    color: white;
+}
+.game-pannel button{
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  margin-top: 5rem;
+  border-radius: 30px;
+  font-size: 20px;
+  color: rgb(244, 244, 244);
+  background-color: rgba(9, 1, 158, 0.455);
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.game-pannel button:active{
+  transform: scale(1.08) ;
+  transition: 1s;
+  box-shadow:  0 0 6px rgb(129, 186, 186);
+  cursor: pointer;
+  border: 1px solid teal;
+}
+.game-meta .badge{
+   color: white;
+   font-size: 25px;
+   font-family: cursive;
+   text-shadow: 2px 3px 2px olive;
+}
+@media (max-width:780px){
+  .game-header h1{
+    font-size:1.7rem;
+  }
+  .game-header p{
+    font-size: 2.5vw;
+    width: 100%;
+  }
+  .game-meta .badge{
+    font-size: 1rem;
+  }
+  .game-pannel .game-status{
+      width: 90%;
+      font-size: 2vw;
+  }
+  .game-pannel button{
+    font-size: 1.7vw;
+  }
+}
+@media(max-width:480px){
+    .gameApp{
+      flex-direction: column;
+    }
+    .game-header h1{
+      font-size: 1.2rem;
+    }
+    .game-header p{
+      font-size: 0.8rem;
+      margin-left: 10px;
+    }
+    
+    
+    aside{
+     margin-top: 0px;
+    }
+    .game-pannel button{
+      margin-top: 40px;
+      font-size: 3vw;
+    }
+}
+
+
