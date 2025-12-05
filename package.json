@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
+    "git-pages": "^0.8.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
